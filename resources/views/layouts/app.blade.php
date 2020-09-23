@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'QinBlog') - {{ $siteConfigs['name'] }}</title>
+    <title>@yield('title', 'QinBlog') - {{ $siteConfigs['name'] }} - 测试标题跟新</title>
 
     <meta name="description" content="@yield('description', $siteConfigs['seo_description'] ?? '')" />
     <meta name="keyword" content="@yield('keyword', $siteConfigs['seo_keyword'] ?? '')" />
