@@ -6,6 +6,7 @@
  * Time: 11:08 AM
  */
 
+date_default_timezone_set('PRC'); //设置中国时区
 $deployLogFile = '../storage/logs/deploy.log';
 $date = date('Y-m-d H:i:s');
 $content = "[$date] deploy start \n";
