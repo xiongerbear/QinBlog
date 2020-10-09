@@ -9,4 +9,5 @@ git checkout master
 git pull
 cd /var/www/QinBlog/
 php artisan config:cache
+php artisan event:cache
 php artisan route:cache
