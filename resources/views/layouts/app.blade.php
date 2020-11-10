@@ -22,6 +22,17 @@
 
     <script src="{{ $siteConfigs['iconfont_url'] ?? '' }}"></script>
 
+    <!-- 特殊时期网站设置成灰色 -->
+    {{--<style type="text/css">--}}
+        {{--html {--}}
+            {{--filter: grayscale(100%);--}}
+            {{---webkit-filter: grayscale(100%);--}}
+            {{---moz-filter: grayscale(100%);--}}
+            {{---ms-filter: grayscale(100%);--}}
+            {{---o-filter: grayscale(100%);--}}
+        {{--}--}}
+    {{--</style>--}}
+    <!-- 特殊时期网站设置成灰色 -->
 </head>
 
 <body>
