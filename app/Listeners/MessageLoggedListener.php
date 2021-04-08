@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Log\Events\MessageLogged;
+use Illuminate\Support\Arr;
 
 class MessageLoggedListener
 {
@@ -43,7 +44,7 @@ class MessageLoggedListener
         }
 
         $logKey = $this->getLogKey($logContent);
-        $context = array_wrap($context);
+        $context = Arr::wrap($context);
         foreach ($context as $k => $data) {
             if (is_object($data)) {
                 if ($data instanceof \Throwable) {
